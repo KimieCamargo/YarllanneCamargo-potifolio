@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projetos</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#4c853a", "background-light": "#f6f7f8", "background-dark": "#101922" },
+                    fontFamily: { "display": ["Inter"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-display">
+<div class="flex flex-col min-h-screen">
+    <header
+        class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="h-8 w-8 text-primary">
+                    </div>
+                    <h2 class="text-lg font-bold text-gray-900 dark:text-white">Yarllanne Kimiê</h2>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+                <nav class="menu hidden md:flex items-center gap-6 text-sm font-medium">
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        href="proficional.html">Sobre</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        href="habilidades.html">Habilidades</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        href="projetos.html">Projetos</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        href="feedback.html">Depoimentos</a>
+                    <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                        href="contato.html">Contato</a>
+                </nav>
+                <a class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90"
+                    href="Curriculo_Yarllanne_Camargo.pdf">
+                    Currículo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 sm:py-24 container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-center mb-12">Meus Projetos</h1>
+
+                <h2 class="text-2xl font-semibold mb-6">📚 Educacionais / Sociais</h2>
+        <section class="card">
+            <div class="video-and-text-container">
+        
+                <div class="video-wrapper">
+                    <iframe width="320" height="180" src="https://www.youtube.com/embed/DGVQgHtIuSk?si=xywjfAMcGU-IuoIB"
+                        title="Senac" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+        
+                <div class="text-content">
+                <h3 class="font-bold">Senac</h3>
+                    <p class="text-content-light">Eu participei do vídeo promocional do Senac  do Senac Espírito
+                        Santo.</p>
+                    <p class="text-content-light ">O vídeo completo está disponível aqui: <br>
+                         <a class="text-primary font-bold" 
+                            href="https://youtu.be/DGVQgHtIuSk?si=xywjfAMcGU-IuoIB"
+                            target="_blank">🔗https://youtu.be/DGVQgHtIuSk?si=xywjfAMcGU-IuoIB</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+                <ul>
+                    <li>Projeto “Ela Pode +” – Vencedor de pitch</li>
+                    <li>Palestra “Se Liga na Educação” – Inclusão e tecnologia</li>
+                </ul>
+        </section>
+
+        <h2 class="text-2xl font-semibold mb-6">💻 Tecnologia / Desenvolvimento</h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+                <h3 class="font-bold text-lg">Ela Pode +</h3>
+                <p class="text-gray-600 dark:text-gray-300">Plataforma criada para empoderar mulheres e promover a
+                    igualdade de gênero no mercado de trabalho. Inclui mentoria, vagas de emprego e cursos. Projeto
+                    vencedor de pitch no Senac Vitória.</p>
+                <a href="https://pedrotavares05.github.io/ela-pode-/index.html" target="_blank"
+                    class="text-primary font-bold">🔗 Ver protótipo</a>
+            </div>
+
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+                <h3 class="font-bold text-lg">Sistema de Agenda de Contatos</h3>
+                <p class="text-gray-600 dark:text-gray-300">Aplicação web para cadastro, gerenciamento e exclusão de
+                    contatos, desenvolvida como estudo de CRUD.
+                <br>
+                <a href="imagens/agenda.png" data-role="button" class="abrirImagem text-primary font-bold">Agenda</a>
+                <br>
+                <a href="imagens/agendaCadastro.png" data-role="button" class="abrirImagem text-primary font-bold">Agenda Cadastro</a>
+            </p>
+            </div>
+
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+                <h3 class="font-bold text-lg">Sistema da Papelaria Yayá</h3>
+                <p class="text-gray-600 dark:text-gray-300">Plataforma web fictícia para gerenciamento de papelaria, com
+                    cadastro de funcionários, produtos e navegação estruturada. <br>
+                    
+                     <a href="imagens/SitePapelaria.png" data-role="button" class="abrirImagem text-primary font-bold">Papelaria</a>
+                </p>
+            </div>
+
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow ">
+            <h3 class="font-bold">SiteFitBory</h3>
+            <p>Plataforma criada para incentivar hábitos saudáveis e bem-estar.
+             Inclui artigos que comparam treinos em casa e na academia, benefícios de exercício regular, rotinas de alongamento e dicas de motivação e mentalidade — tudo para ajudar você a atingir seus objetivos com consciência corporal e constância. <br>
+                <a href="https://mvitoriaacademico16-lgtm.github.io/SiteFitBory/blog.html" target="_blank"
+                class="text-primary font-bold">🔗 Ver protótipo</a>
+                 </p>
+            </div>
+
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-6">🎨 Design / Criatividade</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow ">
+                <h3 class="font-bold">Panfleto "Ela Pode +"</h3>
+                <p>Design visual institucional usado na apresentação oficial do projeto.                  <br>
+                    <a href="imagens/planfleto1.png" data-role="button" class="abrirImagem text-primary font-bold">Panfleto - frente</a> <br>
+                    <a href="imagens/planfleto2.png" data-role="button" class="abrirImagem text-primary font-bold">Panfleto - verso</a></p>
+            </div>
+
+            <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+                <h3 class="font-bold">Logotipo "Ela Pode +"</h3>
+                <p>Identidade visual limpa e sofisticada, transmitindo confiança e impacto social.
+                    <br>
+                    <a href="imagens/logo Ela pode +.png" data-role="button" class="abrirImagem  text-primary font-bold">Logotipo "Ela Pode +"</a>
+                </p>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-6">💼 Empreendedorismo</h2>
+
+        <div class="bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+            <h3 class="font-bold">Venda de bolo</h3>
+            <p>Projeto de produção e venda de bolos artesanais, unindo criatividade e gestão de
+                negócios.</p>
+        </div>
+        
+        <div class="card bg-white dark:bg-background-dark rounded-lg p-6 shadow">
+            <h3 class="font-bold">Tracista</h3> 
+            Eu o mantenho com o objetivo de gerar uma renda extra. É a minha forma de vender e divulgar os serviços de tranças,
+            transformando minhas habilidades em um negócio.
+        </div>   
+        
+        
+            <div class="popup" id="popupImagem">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <img id="imagemPopup" src="" alt="Pré-visualização">
+            </div>
+        </div>
+    </main>
+    <!-- Script de Toggle e Navegação -->
+<script>
+    $(document).ready(function () {
+        // A lógica de abrir está OK: pega o href e mostra o popup
+        $(".abrirImagem").click(function (e) {
+            e.preventDefault();
+            var imgSrc = $(this).attr("href");
+            $("#imagemPopup").attr("src", imgSrc);
+            $("#popupImagem").css("display", "flex"); // display: flex para centralizar
+        });
+
+        // A lógica de fechar está OK
+        $(".close").click(function () {
+            $("#popupImagem").hide();
+        });
+
+        // A lógica de fechar ao clicar fora está OK
+        $("#popupImagem").click(function (e) {
+            if (e.target.id === "popupImagem") {
+                $("#popupImagem").hide();
+            }
+        });
+    });
+</script>
+    <script>
+    const toggle = document.querySelector(".menu-toggle");            const menu = document.querySelector(".menu");
+        toggle.addEventListener("click", () => menu.classList.toggle("active"));
+    </script>
+</body>
+<footer class="bg-white dark:bg-background-dark border-t py-6 text-center text-sm text-gray-500 dark:text-gray-400">© 2025 - Portfólio Yarllanne Kimiê
+</footer>
+
+</html>
